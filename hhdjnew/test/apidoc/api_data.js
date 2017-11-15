@@ -1,0 +1,300 @@
+define({ "api": [
+  {
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "optional": false,
+            "field": "varname1",
+            "description": "<p>No type.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "varname2",
+            "description": "<p>With type.</p>"
+          }
+        ]
+      }
+    },
+    "type": "",
+    "url": "",
+    "version": "0.0.0",
+    "filename": "test/apidoc/main.js",
+    "group": "G__project_hhdj_hhdjnew_test_apidoc_main_js",
+    "groupTitle": "G__project_hhdj_hhdjnew_test_apidoc_main_js",
+    "name": ""
+  },
+  {
+    "version": "2.0.0",
+    "type": "get",
+    "url": "/forum/forumList",
+    "title": "帖子列表",
+    "name": "forumList",
+    "group": "forum",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>页索引</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "size",
+            "description": "<p>分页大小</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "type",
+            "description": "<p>类型</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "source",
+            "description": "<p>来源</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果标识</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>结果说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>结果数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/11 200 OK\n{\n  \"code\": 1,\n  \"mess\": \"成功\",\n  \"data\": {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "test/v2.js",
+    "groupTitle": "forum"
+  },
+  {
+    "type": "get",
+    "url": "/forum/forumList",
+    "title": "帖子列表",
+    "version": "1.0.0",
+    "name": "forumList",
+    "group": "forum",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "page",
+            "description": "<p>页索引</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "size",
+            "description": "<p>分页大小</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果标识</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>结果说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>结果数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/11 200 OK\n{\n  \"code\": 1,\n  \"mess\": \"成功\",\n  \"data\": {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "test/v1.js",
+    "groupTitle": "forum"
+  },
+  {
+    "version": "2.0.0",
+    "type": "get",
+    "url": "/news/newsContent",
+    "title": "新闻详情",
+    "name": "newsContent",
+    "group": "news",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>新闻id</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "type",
+            "description": "<p>类型</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "source",
+            "description": "<p>来源</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果标识</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>结果说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>结果数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/11 200 OK\n{\n  \"code\": 1,\n  \"mess\": \"成功\",\n  \"data\": {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "test/v2.js",
+    "groupTitle": "news"
+  },
+  {
+    "type": "get",
+    "url": "/news/newsContent",
+    "title": "新闻详情",
+    "version": "1.0.0",
+    "name": "newsContent",
+    "group": "news",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>新闻id</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>结果标识</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "message",
+            "description": "<p>结果说明</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>结果数据</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Success-Response:",
+          "content": "HTTP/11 200 OK\n{\n  \"code\": 1,\n  \"mess\": \"成功\",\n  \"data\": {}\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "test/v1.js",
+    "groupTitle": "news"
+  }
+] });

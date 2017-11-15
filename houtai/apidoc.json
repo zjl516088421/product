@@ -1,0 +1,11 @@
+{
+  "name": "黄淮党建 api 文档",
+  "version": "2.1.0",
+  "description": "黄淮党建描述",
+  "title": "黄淮党建api文档1",
+  "url" : "localhost:3000/api",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

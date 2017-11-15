@@ -1,0 +1,36 @@
+const url="";
+module.exports={
+	newsList:url+'/news/newsList',
+	newsContent:url+'/news/newsContent',
+	partyList:url+'/party/partyList',
+	forumList:url+ "/forum/forumList",
+	forumDetail:url+'/forum/forumDetail',
+	addComment:url+'/forum/addComment',
+	saveForum:url+"/forum/saveForum",
+	fileList:url+"/studyFile/fileList",
+	userLogin:url+"/user/login",
+	userInfo:url+'/user/detail',
+	integralList:url+"/user/integralList",
+	modifyInfo:url+"/user/modifyInfo",
+	uppass:url+'/user/updatePwd',
+	thought:url+'/report/addReport',
+	summary:url+'/impress/saveImpress',
+	branchList:url+'/branch/findAll',
+	Comment:url+'/nationComment/getComment',
+	judgeComment:url+'/nationComment/judgeComment',
+	submitSummary:url+"/nationComment/submitSummary",
+	updateBranch:url+ "/nationComment/updateBranch",
+	ParticipatingMembers:url+"/nationComment/userList",
+	isComment: url+ "/nationComment/isComment",
+	userSummary:url+"/nationComment/userSummary",
+	submitComment :url+"/nationComment/submitComment",
+
+	Qiniu_UploadUrl:url+"/image/uploadBase64",
+	reportInfo:url+'/report/reportInfo',
+	checkByUserId:url+'/impress/checkByUserId',
+
+	findBranchNameById:url+'/branch/findBranchName',
+
+	carousel:url+'/carousel/carouselList',
+	proxy:url+'/proxy/proxy',
+}
